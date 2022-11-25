@@ -1,0 +1,163 @@
+.nav {
+    height: 200px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.header-wrap {
+    position: relative;
+    z-index: 1;
+    height: 100px;
+}
+
+.left-part{
+    color: var(--color3);   
+    display: flex;
+    align-items: center;
+}
+
+.right-part{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-warp-inner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-menu {
+    position: relative;
+    z-index: 10;
+    font-weight: 500;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu-options {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.nav-menu-options {
+    list-style-type: none;
+}
+
+.nav-menu-options li a {
+    text-decoration: none;
+    color: var(--color4)
+}
+
+.underline{
+    padding: 0 0.2em 0 0.5em;
+    box-shadow: inset 0 -0.3em var(--color3);
+}
+.nav-menu-options li a:hover > .underline{
+    box-shadow: inset 0 -0.4em var(--color4);
+    transition: 0.5s;
+    
+}
+
+#presentation{
+    width: 100%;
+    color: var(--color4);   
+    margin-top: 10vh;
+
+    background: linear-gradient(180deg, var(--color1), var(--color2) 100%)
+}
+
+#searchBar{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background-color: var(--color2)
+}
+
+
+#presentation h5{
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+}
+
+#presentation h1{
+    font-size: 5.5vw;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    //text-shadow: 10px -10px 40px rgba(255, 255, 255, 0.288)
+}
+
+#aptitudes{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-aptitudes{
+    height: 60vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+
+.hamburguer-menu{
+    position: fixed;
+    top: 35px;
+    left: 50px;
+}
+
+.sidenav-menu{
+    position: fixed;
+    width: calc(100% - 100px);
+    text-align: left;
+    overflow-y: auto;
+    top: 0px;
+    left: 0px;
+}
+
+.card-wrapper {
+    width: 250px;
+    height: 250px;
+
+}
+
+.card{
+    width: 250px;
+    height: 250px;
+    border:3px solid var(--color3);
+    border-radius: 25px;
+}
+
+#certifications{
+    height: auto;
+    width: 100%;
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-certifications{
+    height: 60vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+}

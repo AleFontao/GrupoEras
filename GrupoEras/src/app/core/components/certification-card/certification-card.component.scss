@@ -1,0 +1,22 @@
+.card-certification {
+    width: 250px;
+    height: 250px;
+    border: 3px solid var(--color4);
+    background-color: var(--color3);
+    border-radius: 25px;
+    padding: 40px 30px;
+    color: var(--color1);
+
+}
+
+@keyframes wipe-certification-enter {
+    from { transform : translateY(20em) } /* slide down from off-screen */
+    to   { transform : translateY(0em) }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .card-certification-animation {
+        animation: wipe-certification-enter 1.5s 1;
+        
+    }
+}

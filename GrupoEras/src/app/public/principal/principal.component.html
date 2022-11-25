@@ -1,0 +1,84 @@
+<header class="master-head">
+  <div class="header-wrap">
+    <div class="header-warp-inner">
+      <div class="left-part">
+        <mat-drawer-container class="hamburguer-menu" autosize *ngIf="screenSize">
+          <mat-drawer #drawer class="sidenav-menu" mode="side">
+            <p>Auto-resizing sidenav</p>
+            <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+            <button (click)="showFiller = !showFiller" mat-raised-button>
+              Toggle extra text
+            </button>
+          </mat-drawer>
+
+          <div class="example-sidenav-content">
+            <button type="button" mat-button (click)="drawer.toggle()">
+              <mat-icon>menu</mat-icon>
+            </button>
+          </div>
+        </mat-drawer-container>
+        <h2>Grupo Eras</h2>
+      </div>
+      <div class="right-part" *ngIf="!screenSize">
+        <nav class="nav-menu">
+          <ul class="nav-menu-options">
+            <li>
+              <a href="">
+                <section class="underline">//Opcion 3</section>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <section class="underline">//Opcion 3</section>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <section class="underline">//Opcion 3</section>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <section class="underline">//Opcion 3</section>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <section class="underline">//Opcion 3</section>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<section id="presentation">
+  <!--<div id="searchBar">
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input matInput placeholder="Placeholder">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    </mat-form-field>
+  </div>-->
+  <app-map></app-map>
+</section>
+
+<section id="aptitudes">
+  <h1 class="heading-title">Nosotros</h1>
+  <div class="container-aptitudes">
+    <app-nosotros-card *ngFor="let worker of workers" [worker]="worker"></app-nosotros-card>
+  </div>
+</section>
+
+
+<!---
+<section id="certifications">
+  <div class="container-certifications">
+    <app-certification-card></app-certification-card>
+    <app-certification-card></app-certification-card>
+    <app-certification-card></app-certification-card>
+  </div>
+</section>-->

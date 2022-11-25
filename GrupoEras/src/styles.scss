@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: var(--color1);
+    color: var(--color4);
+    width: 100%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*
+:root {
+    --color1: #000000;
+    --color2: #14213d;
+    --color3: #fca311;
+    --color4: #e5e5e5;
+    --color5: #ffffff;
+}
+*/
+/*
+:root{
+    --color1: #202c39;
+    --color2: #283845;
+    --color3: #b8b08d;
+    --color4: #f2d492;
+    --color5: #f29559;
+}*/
+
+:root{
+    --color4: #0A2F63;
+    --color3: #F88935;
+    --color1: #F4F4F8;
+    --color2: #E6E6EA;
+   
+}
+
+.heading-title{
+    font-size: 75px;
+}
