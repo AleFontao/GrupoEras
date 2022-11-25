@@ -1,0 +1,71 @@
+.card {
+    width: 250px;
+    height: 300px;
+    border: 3px solid var(--color3);
+    border-radius: 25px;
+    padding: 40px 30px;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: 0 0;
+    border-radius: 50%;
+}
+
+@keyframes wipe-enter {
+    0% {
+        opacity: 0;
+        transform: scale(0, .045);
+
+    }
+    40% {
+        opacity: 0.05;
+        transform: scale(1, .045);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .card-animation {
+        animation: wipe-enter 1s 1;
+    }
+}
+
+.card-description {
+    padding: 10px 0px 0px 15px;
+    border: 0px 0px 0px 1px solid var(--color3);;
+}
+
+.card-description::before {
+    content: 'Sobre mi!';
+    opacity: 0.5;
+    color: var(--color3);
+    display: block;
+    margin-left: -18px;
+    font-weight: normal;
+    font-size: 14px;
+
+}
+
+.card-description::after {
+    
+    color: var(--color3);
+    display: block;
+    margin-left: -18px;
+    font-weight: normal;
+    font-size: 14px;
+    content: '';
+    opacity: 0.3;
+}
+
+
+.description {
+    opacity: 0.8;
+    border-left: 1px solid var(--color3);;
+    padding: 2px 0 2px 20px;
+}

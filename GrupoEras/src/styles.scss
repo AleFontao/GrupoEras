@@ -50,3 +50,11 @@ body {
 .heading-title{
     font-size: 75px;
 }
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+    background-color: #F88935;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color: #f88a35a1;
+}
